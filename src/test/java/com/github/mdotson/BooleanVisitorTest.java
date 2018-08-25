@@ -106,7 +106,7 @@ public class BooleanVisitorTest {
             final OrFilter orFilter = new OrFilter(ImmutableList.of(wesleyNameMatcher,
                     worfNameMatcher, andFilter));
 
-            assertFalse(orFilter.accept(visitor));
+            assertTrue(orFilter.accept(visitor));
         }
     }
 }
