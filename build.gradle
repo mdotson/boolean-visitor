@@ -1,5 +1,20 @@
 plugins {
     id 'java'
+    id 'idea'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.0.3'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.0.3'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 group 'com.github.mdotson'
@@ -16,6 +31,5 @@ dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '26.0-jre'
     compile group: 'com.jayway.jsonpath', name: 'json-path', version: '2.3.0'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8'
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.2.0'
 
 }
