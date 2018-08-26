@@ -4,7 +4,7 @@ import com.github.mdotson.BooleanVisitor;
 import lombok.Value;
 
 @Value
-public class StringMatcher implements Filter {
+public class StringMatcherFilter implements Filter {
 
     private final String field;
     private final String regex;
