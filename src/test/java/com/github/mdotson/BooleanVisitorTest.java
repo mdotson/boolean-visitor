@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BooleanVisitorTest {
 
-    private final StringMatcher jeanLucNameMatcher = new StringMatcher("firstName", "Jean-Luc");
-    private final StringMatcher wesleyNameMatcher = new StringMatcher("firstName", "Wesley");
-    private final StringMatcher worfNameMatcher = new StringMatcher("firstName", "Worf");
-    private final StringMatcher rikerNameMatcher = new StringMatcher("firstName", "William");
-    private final StringMatcher lastNameMatcher = new StringMatcher("lastName", "Picard");
+    private final StringMatcherFilter jeanLucNameMatcher = new StringMatcherFilter("firstName", "Jean-Luc");
+    private final StringMatcherFilter wesleyNameMatcher = new StringMatcherFilter("firstName", "Wesley");
+    private final StringMatcherFilter worfNameMatcher = new StringMatcherFilter("firstName", "Worf");
+    private final StringMatcherFilter rikerNameMatcher = new StringMatcherFilter("firstName", "William");
+    private final StringMatcherFilter lastNameMatcher = new StringMatcherFilter("lastName", "Picard");
     private final LessThanFilter ageLessThan70Filter = new LessThanFilter("personalInfo.age", 70);
     private final GreaterThanFilter ageGreaterThan60Filter = new GreaterThanFilter("personalInfo.age", 60);
     private final GreaterThanFilter ageGreaterThan65Filter = new GreaterThanFilter("personalInfo.age", 65);
